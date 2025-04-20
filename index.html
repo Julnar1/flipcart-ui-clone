@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive UI clone of Flipkart's homepage built with HTML and CSS">
+  <title>Flipkart Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header role="banner">
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/header_icons/flashcart_logo.png" alt="Flashcart Logo" width="120" height="40" loading="eager" />
+        </div>
+        <div class="search-container">
+          <button class="search-button" type="submit" aria-label="Search">
+            <i class="fa fa-search search-icon-size" aria-hidden="true"></i>
+          </button>
+          <input 
+            class="search-input" 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search for Products, Brands and More"
+            aria-label="Search products"
+          />
+        </div>
+        <!-- Hamburger Menu Icon for Mobile -->
+        <button class="hamburger-menu" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" aria-label="Login to your account">
+              <img src="images/header_icons/my_profile.svg" alt="" aria-hidden="true">
+              <span>Login</span>
+            </a>
+            <img src="images/header_icons/angle-down-solid.svg" alt="" aria-hidden="true">
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="View your cart">
+              <img src="images/header_icons/cart.svg" alt="" aria-hidden="true">
+              <span>Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="Become a seller">
+              <img src="images/header_icons/Store.svg" alt="" aria-hidden="true">
+              <span>Become a Seller</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="More options">
+              <img src="images/header_icons/vertical_dots.svg" alt="" aria-hidden="true">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Mobile Navigation - Hidden on desktop, shown on mobile via CSS -->
+      <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+        <a href="#" class="mobile-nav-item" aria-label="Login to your account">
+          <img src="images/header_icons/my_profile.svg" alt="" aria-hidden="true">
+          <span>Login</span>
+        </a>
+        <a href="#" class="mobile-nav-item" aria-label="View your cart">
+          <img src="images/header_icons/cart.svg" alt="" aria-hidden="true">
+          <span>Cart</span>
+        </a>
+        <a href="#" class="mobile-nav-item" aria-label="Become a seller">
+          <img src="images/header_icons/Store.svg" alt="" aria-hidden="true">
+          <span>Become a Seller</span>
+        </a>
+        <a href="#" class="mobile-nav-item" aria-label="More options">
+          <img src="images/header_icons/vertical_dots.svg" alt="" aria-hidden="true">
+          <span>More</span>
+        </a>
+      </nav>
+    </header>
+    <nav class="main-nav">
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/top_offers.webp" alt="Top Offers Icon" />
+        <span>Top
+          Offers</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/Mobiles_tablets.webp" alt="Mobile Phones and Tablets Icon" />
+        <span>Mobiles
+          & Tablets</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/tvs_appliances.webp" alt="TVs and Appliances Icon" />
+        <span>TVs
+          & Appliances</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/electronics.jpg" alt="Electronics Icon" />
+        <span>Electronics</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/fashion.webp" alt="Fashion Icon" />
+        <span>Fashion</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/beauty.webp" alt="Beauty Icon" />
+        <span>Beauty</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/home_kitchen.jpg" alt="Home & Kitchen Icon" />
+        <span>Home
+          & Kitchen</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/furniture.webp" alt="Furniture Icon" />
+        <span>Furniture</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/travel.webp" alt="Travel Icon" />
+        <span>Travel</span>
+      </a>
+      <a class="main-nav-link" href="#">
+        <img src="images/nav_images/grocery.webp" alt="Grocery Icon" />
+        <span>Grocery</span>
+      </a>
+    </nav>
+    <div class="banner-container">
+      <a href="#">
+        <img src="images/banner_image/banner_img.webp" alt="Flipkart Banner">
+        <div class="banner-arrow left-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+        <div class="banner-arrow right-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </a>
+    </div>
+    <main class="main-content">
+      <section class="electronics-product-section">
+        <div class="electronics-product-details">
+          <h3>Best of Electronics</h3>
+          <div class="product-cards">
+            <div class="electronic-card">
+              <img src="images/electronics_section_images/headphone.jpeg" alt="Wireless Earbuds">
+              <div style="margin-top:1em;">Best Truewireless Headphones</div>
+              <p><strong>Grab Now</strong></p>
+            </div>
+            <div class="electronic-card">
+              <img src="images/electronics_section_images/printer.webp" alt="Printer">
+              <div style="margin-top:1em;">Printers</div>
+              <p><strong>From ₹10,190</strong></p>
+            </div>
+            <div class="electronic-card">
+              <img src="images/electronics_section_images/monitor.webp" alt="Monitor">
+              <div style="margin-top:1em;">Monitor</div>
+              <p><strong>From ₹8,279</strong></p>
+            </div>
+            <div class="electronic-card">
+              <img src="images/electronics_section_images/shavers.webp" alt="Shaver">
+              <div style="margin-top:1em;">Best of Shavers</div>
+              <p><strong>From ₹1,649</strong></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="electronics-sale-banner"><img src="images/electronics_section_images/banner_image.webp"
+            alt="Electronics sale banner" /> </div>
+      </section>
+      <section class="smartphone-product-section">
+        <h3>Deals on Smartphones</h3>
+        <div class="product-cards">
+          <div class="smartphone-card">
+            <img src="images/smartphone_section__images/motog85_5g.webp" alt="Moto G85 5G 50MP OIS Cam|6000mAh Smartphone">
+            <div style="margin-top:1em;">Moto G85 5G</div>
+            <p><strong>50MP OIS Cam|6000mAh</strong></p>
+          </div>
+          <div class="smartphone-card">
+            <img src="images/smartphone_section__images/moto_edge50_fusion.webp"
+              alt="Moto edge 50 Fusion Curved Display Smartphone">
+            <div style="margin-top:1em;">Moto edge 50 Fusion</div>
+            <p><strong>Curved Display</strong></p>
+
+          </div>
+          <div class="smartphone-card">
+            <img src="images/smartphone_section__images/cmf_phone1.webp" alt="CMF Phone 1 Display 17.02 cm Smartphone">
+            <div style="margin-top:1em;">CMF Phone 1</div>
+            <p><strong>Display 17.02 cm</strong></p>
+
+          </div>
+          <div class="smartphone-card">
+            <img src="images/smartphone_section__images/samsung_a14.webp" alt="Samsung A14 FHD+Display| 50MP Cam Smartphone">
+            <div style="margin-top:1em;">Samsung A14</div>
+            <p><strong>FHD+Display| 50MP Cam</strong></p>
+          </div>
+          <div class="smartphone-card">
+            <img src="images/smartphone_section__images/realme_p1_5g.webp" alt="Realme P1 5G Dimensity7050 5G">
+            <div style="margin-top:1em;">Realme P1 5G</div>
+            <p><strong>Dimensity7050 5G</strong></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-section-1">
+        <div class="footer-column">
+          <div class="footer-title">ABOUT</div>
+          <ul class="footer-links1">
+            <li>
+              <a>Contact Us</a>
+            </li>
+            <li>
+              <a>About US</a>
+            </li>
+            <li>
+              <a>Careers</a>
+            </li>
+            <li>
+              <a>Flashcart Stories</a>
+            </li>
+            <li>
+              <a>Press</a>
+            </li>
+            <li>
+              <a>Corporate Information</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">GROUP COMPANIES</div>
+          <ul class="footer-links1">
+            <li>
+              <a>Mynthra</a>
+            </li>
+            <li>
+              <a>Cleartrip</a>
+            </li>
+            <li>
+              <a>Shopsy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">HELP</div>
+          <ul class="footer-links1">
+            <li>
+              <a>Payments</a>
+            </li>
+            <li>
+              <a>Shipping</a>
+            </li>
+            <li>
+              <a>Cancellation & Returns</a>
+            </li>
+            <li>
+              <a>FAQ</a>
+            </li>
+            <li>
+              <a>Report Infringement</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">CONSUMER POLICY</div>
+          <ul class="footer-links1">
+            <li>
+              <a>Cancellation & Returns</a>
+            </li>
+            <li>
+              <a>Terms of Use</a>
+            </li>
+            <li>
+              <a>Security</a>
+            </li>
+            <li>
+              <a>Privacy</a>
+            </li>
+            <li>
+              <a>Sitemap</a>
+            </li>
+            <li>
+              <a>Grievance Redressal</a>
+            </li>
+            <li>
+              <a>EPR Compliance</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="footer-column footer-column-right">
+          <div class="footer-title">Mail Us</div>
+          <div class="footer-address">
+            <p>Flashcart Internet Private Limited,</p>
+            <p>Buildings Alyssa,Begonia &</p>
+            <p>Clove Embassy Tech Village,</p>
+            <p>Outer Ring Road,Devarabeesanahalli Village,</p>
+            <p>Bengaluru,560103,</p>
+            <p>Karnataka,India</p>
+          </div>
+          <div class="footer-title" style="margin:12px 0;">Social:</div>
+          <div class="footer-social-links">
+            <a href="#"><img src="images/footer_icons/facebook_logo.svg" alt="Facebook Icon" /></a>
+            <a href="#"><img src="images/footer_icons/twitter_logo.svg" alt="Twitter Icon" /></a>
+            <a href="#"><img src="images/footer_icons/youtube_logo.svg" alt="Youtube Icon" /></a>
+          </div>
+
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">Registered Office Address:</div>
+          <div class="footer-address">
+            <p>Flashcart Internet Private Limited,</p>
+            <p>Buildings Alyssa,Begonia &</p>
+            <p>Clove Embassy Tech Village,</p>
+            <p>Outer Ring Road,Devarabeesanahalli Village,</p>
+            <p>Bengaluru,560103,</p>
+            <p>Karnataka,India</p>
+            <p>CIN:U51109KA2012PTC066107</p>
+            <p>Telephone:<a href="#" class="footer-contact-info"> 044-45614700</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section-2">
+        <div class="footer-links2">
+          <img src="images/footer_icons/store_icon.svg" alt="Become a Seller Icon" />
+          <a href="#">Become a Seller</a>
+        </div>
+        <div class="footer-links2">
+          <img src="images/footer_icons/ads_icon.svg" alt="Advertise Icon" />
+          <a href="#">Advertise</a>
+        </div>
+        <div class="footer-links2">
+          <img src="images/footer_icons/gift_cards_icon.svg" alt="Gift Cards Icon" />
+          <a href="#">Gift Cards</a>
+        </div>
+        <div class="footer-links2">
+          <img src="images/footer_icons/help_center_icon.svg" alt="Help Center Icon" />
+          <a href="#">Help Center</a>
+        </div>
+        <span class="footer-copyright">© 2007-2024 Flashcart.com</span>
+        <img class="footer-payment-icons" src="images/footer_icons/payment_method_image.svg"
+          alt="Payment Methods Accepted On Flipkart" />
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
