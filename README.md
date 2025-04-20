@@ -59,7 +59,7 @@ The project is built with responsiveness in mind, adapting to different screen s
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/flipkart-ui-clone.git
+git clone https://github.com/Julnar1/flipcart-ui-clone.git
 ```
 
 2. Open `index.html` in your browser
